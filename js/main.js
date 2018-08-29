@@ -32,8 +32,10 @@
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > 200) {
                 $('.fixed-top').addClass('menu-bg');
+                $('.navbar-header img, span').removeClass('large');
             } else {
                 $('.fixed-top').removeClass('menu-bg');
+                $('.navbar-header img, span').addClass('large');
             }
         });
 

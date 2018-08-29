@@ -74,6 +74,13 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 1px;
 }
 
+h1, h2, h3, h4, h5, .logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -508,9 +515,9 @@ button:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
+  color: #333;
   padding: 0 22px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
   line-height: 40px;
   border-radius: 30px;
@@ -528,7 +535,33 @@ button:focus {
 
 .navbar .nav-link.active {
   color: #fff !important;
-  background: #61D2B4;
+  background: #8cc63f;
+}
+
+.navbar-header a {
+  color: #8cc63f !important;
+  text-decoration: none;
+}
+
+
+nav.navbar .navbar-header img.large {
+  width: 50px;
+  margin-top: -12px;
+}
+
+nav.navbar .navbar-header span.large {
+  font-size: 34px;
+  margin-left: 4px;
+}
+
+nav.navbar .navbar-header span {
+  font-size: 30px;
+}
+
+nav.navbar .navbar-header img {
+  margin-top: -3px;
+  margin-bottom: 6px;
+  width: 38px;
 }
 
 .dropdown-toggle::after {
