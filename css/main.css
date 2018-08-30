@@ -74,11 +74,12 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5, .logo-text {
+.logo-text {
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 8px #fff;
 }
 
 ul {
@@ -122,7 +123,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 700;
-  color: #333;
+  /* color: #333; */
+  color: #8cc63f;
   position: relative;
 }
 
@@ -132,7 +134,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .section-header .section-subtitle {
   margin-top: 15px;
-  color: #333;
+  color: #333;  
   font-size: 14px;
   font-weight: 400;
 }
@@ -141,7 +143,16 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   margin: auto;
   width: 70px;
   position: relative;
-  border-top: 2px solid #61D2B4;
+  /* border-top: 2px solid #61D2B4; */
+  border-top: 2px solid #8cc63f;
+  margin-top: 15px;
+}
+
+.section-header .white-lines {
+  margin: auto;
+  width: 70px;
+  position: relative;
+  border-top: 2px solid #fff;
   margin-top: 15px;
 }
 
@@ -250,7 +261,7 @@ button:focus {
   width: 40px;
   height: 40px;
   text-align: center;
-  background: #ddd;
+  background: #fff;
   font-size: 16px;
 }
 
@@ -260,6 +271,14 @@ button:focus {
 
 .facebook a {
   color: #4867AA;
+}
+
+.email a:hover{
+  background: #333;
+}
+
+.event a:hover{
+  background: #333;
 }
 
 .facebook a:hover {
@@ -429,7 +448,11 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 200px 0 130px;
+  /*padding: 200px 0 130px;  */
+  margin: 460px -1000px -16px;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.4)
+
 }
 
 #hero-area .contents h1 {
@@ -665,7 +688,7 @@ nav.navbar .navbar-header img {
 }
 
 .item-boxes:hover .icon {
-  background: #61D2B4;
+  /* background: #61D2B4; */
 }
 
 .item-boxes:hover .icon i {
@@ -676,11 +699,18 @@ nav.navbar .navbar-header img {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(../img/bg1.jpg) fixed no-repeat;
+  /* background: url(../img/bg1.jpg) fixed no-repeat; */
+  background: #8cc63f;
   background-size: cover;
   color: #fff;
   overflow: hidden;
   position: relative;
+}
+
+#features h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 #features .section-title {
@@ -1055,6 +1085,7 @@ nav.navbar .navbar-header img {
 }
 
 .single-team {
+  margin-bottom: 20px;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1065,7 +1096,7 @@ nav.navbar .navbar-header img {
 }
 
 .single-team img {
-  width: 100%;
+  width: 250px;
 }
 
 .single-team .team-inner {
@@ -1074,13 +1105,16 @@ nav.navbar .navbar-header img {
 }
 
 .single-team .team-details {
-  text-align: center;
+  text-align: left;
+  margin-left: 10px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
   border-radius: 0px;
   background: #f1f1f1;
   padding: 15px;
+  width: 100%;
+  height: 100%
 }
 
 .single-team .team-details .team-title {
