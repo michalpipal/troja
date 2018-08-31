@@ -273,7 +273,7 @@ button:focus {
   color: #4867AA;
 }
 
-.email a:hover{
+.email a:hover, #contact .btn.btn-common:hover{
   background: #333;
 }
 
@@ -450,9 +450,9 @@ button:focus {
 
 #hero-area .contents {
   /*padding: 200px 0 130px;  */
-  margin: 460px -1000px -16px;
+  margin: 520px -1000px -16px;
   padding-top: 10px;
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color:#8cc63f;
 
 }
 
@@ -933,8 +933,8 @@ nav.navbar .navbar-header img {
 }
 
 a.btn.filter{
-  color: #61D2B4 !important;
-  border-color: #61D2B4;
+  color: #8cc63f !important;
+  border-color: #8cc63f;
   background: transparent;
 }
 
@@ -1115,52 +1115,32 @@ a.btn.filter{
  ========================================================================== */
 
  #events {
-  padding: 80px 0;
- }
-/* #testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  padding: 80px 0 0;
+  background: url(../img/bottom-background.jpg) fixed no-repeat;
   background-size: cover;
-  color: #fff;
-  overflow: hidden;
+ }
+
+ #events.overlay {
   position: relative;
 }
 
-.testimonial-item {
-  text-align: center;
+#events.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index:0;
 }
 
-.testimonial-item img {
-  width: 80px;
-  border: 3px solid #fff;
-  height: 80px;
-  border-radius: 50%;
+#events .section-subtitle, #events div h4 {
+  color: #fff;
+  position: relative;
+  padding: 25px 0;
+  z-index: 1;
 }
-
-.testimonial-item .testimonial-text h3 {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.testimonial-item .testimonial-text span {
-  font-size: 14px;
-  color: #999;
-}
-
-.testimonial-item .testimonial-text p {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 36px 10px 30px 10px;
-  margin: 0;
-  line-height: 30px;
-}
-
-.owl-theme .owl-controls .owl-page span {
-  background: #61D2B4;
-}
-
-.owl-theme .owl-controls {
-  margin-top: 20px;
-} */
 
 /* ==========================================================================
   12. Team Section
@@ -1331,13 +1311,12 @@ a.btn.filter{
   margin-bottom: 45px;
 }
 
-.contact-us p span {
-  color: #61D2B4;
-  padding-left: 10px;
-}
-
 #contact {
-  background: #343a40;
+  /* background: #343a40; */
+  /* background: url(../img/bottom-background.jpg) fixed no-repeat; */
+  padding: 40px 0 10px 0;
+  background: #8cc63f;
+  background-size: contain;
   color: #fff;
   position: relative;
 }
@@ -1346,9 +1325,10 @@ a.btn.filter{
   width: 100%;
   margin-bottom: 10px;
   padding: 14px;
-  border-color: #fff;
+  border: 3px solid #a58e96;
   border-radius: 0px;
-  color: #fff;
+  color:#8cc63f;
+  /* background: #fff; */
   background: transparent;
   font-size: 14px;
   -webkit-transition: all 0.3s;
@@ -1356,10 +1336,21 @@ a.btn.filter{
   transition: all 0.3s;
 }
 
+.btn-common{
+  color: #8cc63f !important;
+  border-color: #8cc63f;
+  background: #fff;
+}
+
+#contact .btn-common:hover{
+  color: #fff !important;
+}
+
 .form-control:focus {
   box-shadow: none;
   color: #fff;
-  border-color: #61D2B4;
+  /* border-color: #fff; */
+  border: 2px solid #fff;
   background: transparent;
   outline: none;
 }
@@ -1371,18 +1362,82 @@ a.btn.filter{
 .text-danger {
   font-size: 14px;
   margin-top: 10px;
+  color: #FF0000 !important;
 }
 
 .list-unstyled li {
-  color: #d9534f;
+  color: #ff0000;
+  font-weight: 500;
 }
+
+#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+#contact ::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+#contact :-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+#contact :-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+#contact {
+  padding: 40px 0 0;
+  background: url(../img/contact.jpg) fixed no-repeat;
+  background-size: cover;
+ }
+
+ #contact.overlay {
+  position: relative;
+}
+
+#contact.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index:0;
+}
+
+#contact .section-subtitle, #events div h4 {
+  color: #fff;
+  position: relative;
+  padding: 25px 0;
+  z-index: 1;
+}
+
+/* .contact-address p.email {
+  font-size: 14px;
+  padding: 11px 40px;
+  border-radius: 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+  border: 1px solid #61D2B4;
+  background: #61D2B4;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  color: #8cc63f !important;
+  border-color: #8cc63f;
+  background: #fff;
+} */
 
 /* ==========================================================================
 15. Footer Style
  ========================================================================== */
 footer {
-  background: #292f35;
-  padding: 20px 0;
+  background: #fff;
+  /* padding: 20px 0; */
 }
 
 .footer-links {
@@ -1394,7 +1449,8 @@ footer {
 }
 
 .footer-links li a {
-  color: #fff;
+  /* color: #fff; */
+  color: #8cc63f;
   margin-right: 15px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1411,11 +1467,11 @@ footer {
 }
 
 .copyright p {
-  color: #fff;
+  color: #8cc63f;
 }
 
 .copyright p a {
-  color: #fff;
+  color: #8cc63f;
 }
 
 .copyright p a:hover {

@@ -4,21 +4,21 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Jméno je povinné";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "E-mail je povinný";
 } else {
     $email = $_POST["email"];
 }
 
 // MSG SUBJECT
 if (empty($_POST["msg_subject"])) {
-    $errorMSG .= "Subject is required ";
+    $errorMSG .= "Předmět je povinný";
 } else {
     $msg_subject = $_POST["msg_subject"];
 }
@@ -26,13 +26,13 @@ if (empty($_POST["msg_subject"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Zpráva musí být vyplněna";
 } else {
     $message = $_POST["message"];
 }
 
 
-$EmailTo = "armanmia7@gmail.com";
+$EmailTo = "pipal11@seznam.cz";
 $Subject = "New Message Received";
 
 // prepare email body text
