@@ -688,10 +688,6 @@ nav.navbar .navbar-header img {
   margin-bottom: 10px;
 }
 
-.item-boxes:hover .icon {
-  /* background: #61D2B4; */
-}
-
 .item-boxes:hover .icon i {
   color: #fff;
 }
@@ -790,8 +786,7 @@ nav.navbar .navbar-header img {
 /* ==========================================================================
   6a. Program Section Style
    ========================================================================== */
-  }
-  
+    
   #program .icon {
     display: inline-block;
     width: 60px;
@@ -1476,4 +1471,51 @@ footer {
 
 .copyright p a:hover {
   color: #61D2B4;
+}
+
+/* .modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing 
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+} */
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal h5{
+  font-size: 30px;
+}
+
+.single-team .overlay {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.5);
 }
