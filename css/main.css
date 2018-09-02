@@ -105,6 +105,15 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #61D2B4;
 }
 
+#main-navbar .nav-item .nav-link {
+  color: #8cc63f !important;
+}
+
+#main-navbar .nav-item .nav-link.active {
+  color: #fff !important;
+  background: #8cc63f;
+}
+
 /* ==========================================================================
    2.1 Section Title
    ========================================================================== */
@@ -460,7 +469,7 @@ button:focus {
   color: #fff;
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 #hero-area .contents p {
@@ -469,6 +478,7 @@ button:focus {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.5px;
+  padding-bottom: 10px;
 }
 
 #hero-area .contents .btn {
@@ -583,17 +593,13 @@ nav.navbar .navbar-header span {
 }
 
 nav.navbar .navbar-header img {
-  margin-top: -3px;
+  margin-top: 4px;
   margin-bottom: 6px;
   width: 38px;
 }
 
 .dropdown-toggle::after {
   display: none;
-}
-
-.slicknav_btn {
-  border-color: #61D2B4;
 }
 
 .slicknav_menu .slicknav_icon-bar {
@@ -604,8 +610,26 @@ nav.navbar .navbar-header img {
 @media (min-width: 768px) and (max-width: 991px) {
   #nav-main li a.nav-link {
     padding-top: 18px;
-  }
+  }  
 }
+
+@media (min-width: 768px){
+  .navbar-expand-lg .navbar-collapse {
+      display: -ms-flexbox!important;
+      display: flex!important;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .navbar-collapse{
+    flex-basis: auto;
+  }  
+}
+
+
 
 .navbar-toggler {
   display: none;
@@ -648,6 +672,10 @@ nav.navbar .navbar-header img {
   .slicknav_nav .dropdown li a.active {
     background: #f8f9fa;
     color: #61D2B4;
+  }
+
+  nav.navbar .navbar-header img {
+    margin-top: -6px;
   }
 }
 
@@ -934,11 +962,8 @@ a.btn.filter{
 }
 
 .controls a.btn.active {
-  /* color: #61D2B4 !important;
-  border-color: #61D2B4; */
   color: #fff !important;
   background: #8cc63f;
-  /*background: transparent; */
 }
 
 .controls .btn {
@@ -1155,8 +1180,140 @@ a.btn.filter{
   overflow: hidden;
 }
 
+#team .single-team .row{
+  flex-wrap: nowrap; 
+}
+
 .single-team img {
-  width: 250px;
+  width: 150px;
+}
+
+.single-team .overlay {
+  width: 150px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.single-team .team-details h3.team-title {
+  font-size: 14px;
+}
+
+.team-details .team-inner p {
+  font-size: 12px;
+}
+
+@media (max-width: 576px){
+.col-xs-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;}}
+
+  .single-team .team-details {
+    text-align: left;
+    margin-left: -45px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0px;
+    background: #f1f1f1;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 576px) { 
+  .single-team img {
+    width: 150px;
+  }
+
+  .single-team .team-details {
+    text-align: left;
+    margin-left: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0px;
+    background: #f1f1f1;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  .single-team img {
+    width: 190px;
+  }
+
+  .single-team .overlay {
+    width: 190px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* .single-team .team-details {
+    text-align: left;
+    margin-left: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0px;
+    background: #f1f1f1;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  } */
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .single-team img {
+    width: 210px;
+  }
+
+  .single-team .overlay {
+    width: 210px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* .single-team .team-details {
+    text-align: left;
+    margin-left: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0px;
+    background: #f1f1f1;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  } */
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .single-team img {
+    width: 250px;
+  }
+
+  .single-team .overlay {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+@media only screen  and (min-width : 1224px) {
+  .single-team .team-details h3.team-title {
+    font-size: 20px;
+  }
+
+  .team-details .team-inner p {
+    font-size: 14px;
+  }
+  
+  .single-team img {
+    width: 250px;
+  }
 }
 
 .single-team .team-inner {
@@ -1164,7 +1321,7 @@ a.btn.filter{
   transition: 0.5s;
 }
 
-.single-team .team-details {
+/* .single-team .team-details {
   text-align: left;
   margin-left: 10px;
   -webkit-transition: 0.5s;
@@ -1175,7 +1332,7 @@ a.btn.filter{
   padding: 15px;
   width: 100%;
   height: 100%
-}
+} */
 
 .single-team .team-details .team-title {
   margin-bottom: 5px;
@@ -1509,13 +1666,36 @@ footer {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+  top: 60px;
 }
 
 .modal h5{
   font-size: 30px;
 }
 
-.single-team .overlay {
-  width: 250px;
-  background: rgba(0, 0, 0, 0.5);
+.navbar .navbar-header span.logo-text{
+  display: none;
+}
+
+@media (min-width: 1224px){
+  .navbar .navbar-header span.logo-text{
+    display: inherit;
+  }
+  nav.navbar .navbar-header img {
+    margin-top: -3px;
+  }
+} 
+
+.slicknav_btn {
+  margin: 5px 10px 15px 0;
+}
+
+.modal-dialog {
+  margin: 10px 40px 10px 40px;
+}
+
+@media (max-width: 768px){
+  .modal h5 {
+    font-size: 20px;
+  }
 }

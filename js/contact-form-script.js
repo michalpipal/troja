@@ -36,7 +36,7 @@ function submitForm(){
 
 function formSuccess(){
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+    submitMSG(true, "Zpráva odeslána!")
 }
 
 function formError(){

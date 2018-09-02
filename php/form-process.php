@@ -32,33 +32,33 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "pipal11@seznam.cz";
-$Subject = "New Message Received";
+$EmailTo = "info@trojskykun2018.cz";
+$Subject = "Nová zpráva";
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= "Jméno: ";
 $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Subject: ";
+$Body .= "Předmět: ";
 $Body .= $msg_subject;
 $Body .= "\n";
-$Body .= "Message: ";
+$Body .= "Zpráva: ";
 $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body, "Od:".$email);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
-   echo "success";
+   echo "Zpráva odeslána";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo "Něco se nepovedlo, zkuste to prosím znovu";
     } else {
         echo $errorMSG;
     }

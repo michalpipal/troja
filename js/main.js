@@ -2,20 +2,22 @@
   
   "use strict";
 
+  $('.scrolling-navbar').addClass('top-nav-collapse');
+
   // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
-        }
-    });
+    // $(window).on('scroll', function() {
+    //     if ($(window).scrollTop() > 200) {
+    //         $('.scrolling-navbar').addClass('top-nav-collapse');
+    //     } else {
+    //         $('.scrolling-navbar').removeClass('top-nav-collapse');
+    //     }
+    // });
 
     /* 
    One Page Navigation & wow js
    ========================================================================== */
     //Initiat WOW JS
-    new WOW().init();
+    new WOW().init();   
 
     // one page navigation 
     $('.main-navigation').onePageNav({
@@ -32,10 +34,10 @@
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > 200) {
                 $('.fixed-top').addClass('menu-bg');
-                $('.navbar-header img, span').removeClass('large');
+                //$('.navbar-header img, span').removeClass('large');
             } else {
                 $('.fixed-top').removeClass('menu-bg');
-                $('.navbar-header img, span').addClass('large');
+                //$('.navbar-header img, span').addClass('large');
             }
         });
 
