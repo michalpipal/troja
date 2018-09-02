@@ -50,8 +50,11 @@ $Body .= "Zpráva: ";
 $Body .= $message;
 $Body .= "\n";
 
+$headers[] = "From:".$email;
+$headers[] = "Content-Type: text/html; charset=UTF-8";
+
 // send email
-$success = mail($EmailTo, $Subject, $Body, "Od:".$email);
+$success = mail($EmailTo, $Subject, mb_convert_encoding($Body, 'UTF-8'), implode("\r\n", $headers));
 
 // redirect to success page
 if ($success && $errorMSG == ""){

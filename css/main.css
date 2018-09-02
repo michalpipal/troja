@@ -1683,6 +1683,20 @@ footer {
   .modal h5 {
     font-size: 20px;
   }
+
+  .single-team .team-details .team-title{
+    font-size: 12px;
+  }
+
+  .single-team .team-details .team-title {    
+    font-size: 18px;
+  }
+
+  .single-team .team-details p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
 /* 
   #hero-area {
     background: url(../img/hero-area.jpg) fixed no-repeat;
@@ -1727,23 +1741,29 @@ footer {
     max-width: 25%;
   }
 
-  /* .single-team img{
-    margin-left: -25px;
+  .col-xs-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .single-team img{
+    margin-left: -5px;
     margin-right: -25px;
-  } */
+  }
 
   .single-team .team-details .team-title{
     font-size: 12px;
   }
 
   .single-team .team-details p{
-    font-size: 10px;
+    font-size: 11px;
     line-height: 20px;
   }
 
   .single-team .team-details{
     margin-left: 5px;
-    padding: 5px;
+    padding: 10px;
   }
 }
 

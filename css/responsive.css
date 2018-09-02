@@ -109,6 +109,6 @@
 
   #hero-area{
     background-size: contain;
-    background-position: 0px 30px;
+    background-position: 0px 30px !important;
   }
 }
