@@ -675,7 +675,7 @@ nav.navbar .navbar-header img {
   }
 
   nav.navbar .navbar-header img {
-    margin-top: -6px;
+    margin-top: 2px;
   }
 }
 
@@ -1679,9 +1679,9 @@ footer {
 
 
 @media (max-width: 761px){
-  .navbar .navbar-header span.logo-text{
+  /* .navbar .navbar-header span.logo-text{
     font-size: 30px;
-  }
+  } */
 
   .navbar-brand {
     padding: 7px;
