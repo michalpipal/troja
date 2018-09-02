@@ -550,7 +550,7 @@ button:focus {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #333;
-  padding: 0 22px;
+  padding: 0 10px;
   margin-top: 15px;
   margin-bottom: 20px;
   line-height: 40px;
@@ -1674,15 +1674,30 @@ footer {
 }
 
 .navbar .navbar-header span.logo-text{
-  display: none;
+  font-size: 15px;
+}
+
+
+@media (max-width: 761px){
+  .navbar .navbar-header span.logo-text{
+    font-size: 30px;
+  }
+
+  .navbar-brand {
+    padding: 7px;
+  }
 }
 
 @media (min-width: 1224px){
   .navbar .navbar-header span.logo-text{
-    display: inherit;
+    font-size: 30px;
   }
   nav.navbar .navbar-header img {
     margin-top: -3px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 22px;
   }
 } 
 
