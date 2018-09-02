@@ -470,6 +470,7 @@ button:focus {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 #hero-area .contents p {
@@ -675,7 +676,7 @@ nav.navbar .navbar-header img {
   }
 
   nav.navbar .navbar-header img {
-    margin-top: 2px;
+    margin-top: px;
   }
 }
 
@@ -1201,11 +1202,7 @@ a.btn.filter{
   font-size: 12px;
 }
 
-@media (max-width: 576px){
-.col-xs-9 {
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-  max-width: 75%;}}
+
 
   .single-team .team-details {
     text-align: left;
@@ -1678,14 +1675,22 @@ footer {
 }
 
 
-@media (max-width: 761px){
-  /* .navbar .navbar-header span.logo-text{
-    font-size: 30px;
-  } */
-
+@media (max-width: 761px){ 
   .navbar-brand {
     padding: 7px;
   }
+
+  .modal h5 {
+    font-size: 20px;
+  }
+/* 
+  #hero-area {
+    background: url(../img/hero-area.jpg) fixed no-repeat;
+    background-size: contain;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  } */
 }
 
 @media (min-width: 1224px){
@@ -1709,8 +1714,55 @@ footer {
   margin: 10px 40px 10px 40px;
 }
 
-@media (max-width: 768px){
-  .modal h5 {
-    font-size: 20px;
+@media (max-width: 576px){
+  .col-xs-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-xs-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 256%;
+    max-width: 25%;
+  }
+
+  /* .single-team img{
+    margin-left: -25px;
+    margin-right: -25px;
+  } */
+
+  .single-team .team-details .team-title{
+    font-size: 12px;
+  }
+
+  .single-team .team-details p{
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .single-team .team-details{
+    margin-left: 5px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 400px){
+  .single-team img{
+    margin-left: -26px;
+    margin-right: -25px;
+  }
+
+  .single-team .team-details p{
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .single-team img {
+    width: 130px;
+  }
+
+  .single-team .overlay {
+    width: 82px;
   }
 }

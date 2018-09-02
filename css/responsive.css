@@ -1,10 +1,19 @@
 /* only small desktops */
 /* tablets */
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1224px) {
   #hero-area .contents h1 {
     font-size: 28px;
   }
+  #hero-area{
+    background-size: contain;
+  }
+
+  #hero-area .contents {
+    padding: 0;
+    margin: 400px -1000px -16px;
+  }
+
   .item-boxes h4 {
     font-size: 18px;
   }
@@ -38,11 +47,17 @@
     font-size: 20px;
   }
   #hero-area .contents {
-    padding: 100px 0 80px;
+    padding: 0;
+    margin: 350px -300px -16px;
   }
+
+  #hero-area{
+    background-size: contain;
+  }
+
   #hero-area .contents h1 {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
   }
   #features .show-box img {
     display: none;
@@ -80,5 +95,20 @@
   }
   .copyright {
     float: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-header .section-title {
+    font-size: 20px;
+  }
+  #hero-area .contents {
+    padding: 0;
+    margin: 200px -15px -16px;
+  }
+
+  #hero-area{
+    background-size: contain;
+    background-position: 0px 30px;
   }
 }
